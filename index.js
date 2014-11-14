@@ -15,9 +15,16 @@ nconf
         port: 6500,
         url: 'http://localhost:6500',
         modulestore: {
-            lmsUrl: 'http://localhost:8000',
             mongo: {
                 uri: '192.168.33.10/edxapp'
+            },
+            settings: {
+                lmsUrl: 'http://localhost:8000',
+                studioUrl: 'http://localhost:8001',
+                aboutFields: [
+                    'short_description',
+                    'overview'
+                ]
             },
             retryInterval: 500
         }
