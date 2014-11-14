@@ -1,0 +1,42 @@
+{
+  "name": "edx-modulestore-api",
+  "version": "0.1.0",
+  "description": "REST API for browsing Open edX modulestores",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IONISx/edx-modulestore-api"
+  },
+  "keywords": [
+    "openedx",
+    "rest",
+    "api",
+    "modulestore",
+    "edx"
+  ],
+  "author": "Bertrand Marron <bertrand.marron@ionisx.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IONISx/edx-modulestore-api/issues"
+  },
+  "homepage": "https://github.com/IONISx/edx-modulestore-api",
+  "dependencies": {
+    "express": "^4.10.2",
+    "edx-modulestore": "^0.1.3",
+    "nconf": "^0.6.9",
+    "errorhandler": "^1.2.2",
+    "body-parser": "^1.9.2",
+    "method-override": "^2.3.0",
+    "cors": "^2.5.2",
+    "morgan": "^1.5.0",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "load-grunt-tasks": "^1.0.0",
+    "grunt-contrib-jshint": "^0.10.0"
+  }
+}
