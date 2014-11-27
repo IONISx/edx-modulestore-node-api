@@ -6,7 +6,7 @@ API for easy browsing of Open edX modulestores.
 #How to Install and Run
 ```
 $ sudo npm install -g grunt-cli
-$ git clone REPO_URL
+$ git clone https://github.com/IONISx/edx-modulestore-api.git
 $ cd edx-modulestore-api
 $ npm install
 $ nano config.json  # Configure it, paste the following lines
