@@ -36,21 +36,18 @@ var app = require('./lib/app');
 var connect = function () {
     modulestore
         .connect(nconf.get('modulestore:mongo:uri'))
-        .fail(function () {
+        .then(function () {
+            app.listen(nconf.get('port'), nconf.get('host'), function () {
+                console.error(util.format('edx-modulestore-api: listening on %s:%s', nconf.get('host'), nconf.get('port')));
+            });
+        })
+        .catch(function () {
             var interval = nconf.get('modulestore:retryInterval');
 
             console.error(util.format('edx-modulestore-api: could not connect to the database, retrying in %dms', interval));
             setTimeout(connect, interval);
         });
 };
-
-modulestore.on('connected', function () {
-    console.error('edx-modulestore-api: connection established');
-
-    app.listen(nconf.get('port'), nconf.get('host'), function () {
-        console.error(util.format('edx-modulestore-api: listening on %s:%s', nconf.get('host'), nconf.get('port')));
-    });
-});
 
 modulestore.on('disconnected', function () {
     console.error('edx-modulestore-api: connection lost, exiting');
