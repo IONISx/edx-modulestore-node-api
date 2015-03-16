@@ -25,7 +25,7 @@
   "homepage": "https://github.com/IONISx/edx-modulestore-api",
   "dependencies": {
     "express": "^4.10.2",
-    "edx-modulestore": "^0.1.4",
+    "edx-modulestore": "^0.2.0",
     "nconf": "^0.6.9",
     "errorhandler": "^1.2.2",
     "body-parser": "^1.9.2",
