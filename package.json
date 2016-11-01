@@ -25,19 +25,19 @@
   "homepage": "https://github.com/IONISx/edx-modulestore-api",
   "dependencies": {
     "express": "^4.10.2",
-    "edx-modulestore": "^0.2.0",
-    "nconf": "^0.6.9",
+    "edx-modulestore": "^2.8.0",
+    "nconf": "^0.8.4",
     "errorhandler": "^1.2.2",
     "body-parser": "^1.9.2",
     "method-override": "^2.3.0",
     "cors": "^2.5.2",
     "morgan": "^1.5.0",
-    "lodash": "^2.4.1",
+    "lodash": "^4.16.6",
     "express-validator": "^2.7.0"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "load-grunt-tasks": "^1.0.0",
-    "grunt-contrib-jshint": "^0.10.0"
+    "grunt": "^1.0.1",
+    "load-grunt-tasks": "^3.5.2",
+    "grunt-contrib-jshint": "^1.0.0"
   }
 }
